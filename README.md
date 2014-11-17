@@ -20,8 +20,8 @@ To create the image zokeber/centos, clone this repository and execute the follow
 
 Another alternatively, you can build an image from Dockerfile:
 
-docker build -t="zokeber/centos" github.com/zokeber/docker-centos
+`docker build -t="zokeber/centos" github.com/zokeber/docker-centos`
 
 ### Run
 
-docker run -it zokeber/centos bash
+`docker run -it zokeber/centos bash`
