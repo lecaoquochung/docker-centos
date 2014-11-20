@@ -2,6 +2,12 @@
 # CentOS 7 Dockerfile
 #
 
+# Build:
+# docker build -t zokeber/mongodb:latest .
+#
+# Run:
+# docker run -itd zokeber/mongodb bash
+
 # Pull base image
 FROM centos:latest
 
