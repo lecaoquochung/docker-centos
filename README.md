@@ -10,18 +10,58 @@ This repository contains a Dockerfile to build a Docker Image for CentOS 7 with 
 
 ### Installation
 
-Install [Docker](https://www.docker.com/).
+1. Install [Docker](https://www.docker.com/).
 
-### Build
+2. You can download automated build from public Docker Hub Registry:
+
+```
+docker pull zokeber/centos
+```
+
+**Another way: build from Github**
 
 To create the image zokeber/centos, clone this repository and execute the following command on the docker-centos folder:
 
-`docker build -t zokeber/centos .`
+`docker build -t zokeber/centos:latest .`
 
-Another alternatively, you can build an image from Dockerfile:
+Another alternatively, you can build an image directly from Github:
 
-`docker build -t="zokeber/centos" github.com/zokeber/docker-centos`
+`docker build -t="zokeber/centos:latest" github.com/zokeber/docker-centos`
 
-### Run
 
-`docker run -it zokeber/centos bash`
+### Create and running a container
+
+**Create container:**
+
+```
+docker create -it --name centos -h centos zokeber/centos
+```
+
+**Start container:**
+
+```
+docker start centos
+```
+
+
+### Connection methods:
+
+**Bash:**
+
+`docker exec -it centos bash`
+
+
+### Upgrading
+
+Stop the currently running image:
+
+```
+docker stop centos
+```
+
+
+Update the docker image:
+
+```
+docker pull zokeber/centos:latest
+```
