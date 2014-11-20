@@ -46,9 +46,9 @@ docker start centos
 
 ### Connection methods:
 
-**Bash:**
-
-`docker exec -it centos bash`
+```
+docker exec -it centos bash
+```
 
 
 ### Upgrading
