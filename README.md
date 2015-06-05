@@ -2,6 +2,8 @@
 
 This repository contains a Dockerfile to build a Docker Image for CentOS 7 with steroids.
 
+[![Build Status](https://travis-ci.org/zokeber/docker-centos.svg?branch=master)](https://travis-ci.org/zokeber/docker-centos)
+
 ## Base Docker Image
 
 * [centos/latest](https://registry.hub.docker.com/_/centos/)
