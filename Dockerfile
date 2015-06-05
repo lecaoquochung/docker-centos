@@ -3,10 +3,16 @@
 #
 
 # Build:
-# docker build -t zokeber/mongodb:latest .
-#
-# Run:
-# docker run -itd zokeber/mongodb bash
+# docker build -t zokeber/centos:latest .
+
+# Create:
+# docker create -it --name centos -h centos zokeber/centos
+
+# Start:
+# docker start centos
+
+# Connect with bash
+# docker exec -it centos bash
 
 # Pull base image
 FROM centos:latest
