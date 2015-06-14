@@ -26,6 +26,9 @@ RUN yum update -y && yum upgrade -y
 # Install packages
 RUN yum install -y unzip wget curl git
 
+# Install EPEL Repository
+RUN yum install -y epel-release
+
 # Clean CentOS 7
 RUN yum clean all
 
